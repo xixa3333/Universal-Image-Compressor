@@ -30,10 +30,10 @@
 ```mermaid
 graph TD
     A[輸入檔案] --> B{選擇模式}
-    B -->|Mode 1: DCT| C[色彩分離 -> DCT 轉換 -> 量化 -> ZigZag]
-    B -->|Mode 2: DPCM| D[色彩分離 -> 空間差分 (Current-Prev)]
+    B -->|Mode 1: DCT| C["色彩分離 -> DCT 轉換 -> 量化 -> ZigZag"]
+    B -->|Mode 2: DPCM| D["色彩分離 -> 空間差分 (Current-Prev)"]
     B -->|Mode 3: Raw| E[讀取原始 Bytes]
-    C --> F[LZ77 編碼 (滑動視窗)]
+    C --> F[LZ77 編碼]
     D --> F
     E --> F
     F --> G[Huffman 統計與建樹]
