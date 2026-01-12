@@ -1,0 +1,15 @@
+# 忽略編譯出的執行檔
+*.exe
+*.o
+*.obj
+
+# 忽略測試產生的檔案
+*.huf
+*_restored.png
+restored_file.bin
+temp_converted.png
+temp_convert_log.txt
+
+# 忽略編輯器設定
+.vscode/
+.idea/
